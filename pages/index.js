@@ -15,7 +15,7 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
-        <a href="/lead">Click me!</a>
+        <a>Click me!</a>
       </main>
 
       <Footer />
