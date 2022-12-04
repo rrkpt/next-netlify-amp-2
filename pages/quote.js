@@ -12,7 +12,7 @@ export default function Quote() {
 
       <main>
         <Header title="Quote - please fill your data" />
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" netlify>
           <p>
             <label>Your Name: <input type="text" name="name" /></label>
           </p>
