@@ -11,11 +11,12 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-
-        <p className="text">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <section className='text'>Hero banner</section>
+        <section className='text'>Hero content</section>
+        <section className='text'>How it works</section>
+        <section className='text'>Features</section>
+        <section className='text'>Why we</section>
+        <section className='text'>Cross sell</section>
       </main>
 
       <Footer />
