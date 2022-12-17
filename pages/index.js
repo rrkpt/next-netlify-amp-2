@@ -12,7 +12,10 @@ export default function Home() {
 
       <main>
         <section className='text'>Hero banner</section>
-        <section className='text'>Hero content</section>
+        <section className='text'>
+          <p className='text'>Hero content</p>
+          <button href='/quote'>ОТРИМАТИ ПРОПОЗИЦІЮ</button>
+        </section>
         <section className='text'>How it works</section>
         <section className='text'>Features</section>
         <section className='text'>Why we</section>
