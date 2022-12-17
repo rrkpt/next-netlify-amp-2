@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+export default async function handler(req, res) {
     // Get data submitted in request's body.
     const body = req.body
 
@@ -7,11 +7,10 @@ export default function handler(req, res) {
     console.log('body: ', body)
 
     if (!body.phone) {
-        // Sends a HTTP bad request error code
         return res.status(400).json({ data: 'Phone not found' })
     }
 
-    const endpoint = 'https://karpaty-energy.monday.com/api/'
+    const endpoint = 'https://api.monday.com/v2/'
     const options = {
         method: 'POST',
         headers: {
@@ -20,8 +19,8 @@ export default function handler(req, res) {
         },
         body: body
     }
-    fetch(endpoint, options)
-        .then((response) => console.log(response.status))
+    const response = await fetch(endpoint, options)
+    console.log(response.status)
 
     // Found the name.
     // Sends a HTTP success code
