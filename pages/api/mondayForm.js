@@ -21,7 +21,7 @@ export default function handler(req, res) {
         body: body
     }
     fetch(endpoint, options)
-        .then((response) => console.log(response))
+        .then((response) => console.log(response.status))
 
     // Found the name.
     // Sends a HTTP success code
