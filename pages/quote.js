@@ -7,7 +7,7 @@ export default function QuoteForm() {
         // Get data from the form.
         const data = {
             name: event.target.name.value,
-            email: event.target.email.value,
+            phone: event.target.phone.value,
         }
 
         // Send the data to the server in JSON format.
@@ -44,8 +44,8 @@ export default function QuoteForm() {
             <label htmlFor="name"> Name</label>
             <input type="text" id="name" name="name" />
 
-            <label htmlFor="email">Last Name</label>
-            <input type="text" id="email" name="email" required />
+            <label htmlFor="phone">Last Name</label>
+            <input type="text" id="phone" name="phone" required />
 
             <button type="submit">Submit</button>
         </form>
