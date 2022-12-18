@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     }
 
     let query = "mutation ($itemName:String, $columnValues:JSON!) { create_item (board_id: 2439635456, item_name: $itemName, column_values: $columnValues) { id }}";
-    fetch("https://api.monday.com/v2", {
+    const response = await fetch("https://api.monday.com/v2", {
         method: 'post',
         headers: {
             'Content-Type': 'application/json',
@@ -20,11 +20,9 @@ export default async function handler(req, res) {
                 columnValues: "{\"phone_1\" : {\"phone\" : \"" + body.phone + "\"}}"
             })
         })
-    })
-        .then(createRes => createRes.json())
-        .then(createRes => console.log(JSON.stringify(createRes, null, 2)));
-
-    // Found the name.
-    // Sends a HTTP success code
-    res.status(200)
+    });
+    
+    if (response.ok)
+        res.status(200)
+    res.status(500)
 }
