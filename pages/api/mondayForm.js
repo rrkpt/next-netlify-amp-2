@@ -22,7 +22,6 @@ export default async function handler(req, res) {
         })
     });
     
-    if (response.ok)
-        res.status(200)
-    res.status(500)
+    if (response.ok) res.status(200).json('Success')
+    else res.status(500).json('Error')
 }
