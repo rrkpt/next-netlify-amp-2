@@ -3,7 +3,15 @@ import Footer from '@components/Footer'
 
 export default function Home() {
   return (
-    <div className="container">
+    <>
+      <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-0Y62RSDECD`} />
+      <Script strategy="lazyOnload">
+        {`window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-0Y62RSDECD');`}
+      </Script>
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
@@ -22,6 +30,6 @@ export default function Home() {
       </main>
 
       <Footer />
-    </div>
+    </>
   )
 }
