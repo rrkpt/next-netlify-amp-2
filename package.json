@@ -8,6 +8,8 @@
     "export": "next export"
   },
   "dependencies": {
+    "@analytics/google-tag-manager": "^0.5.3",
+    "analytics": "^0.8.1",
     "cypress": "^10.0.3",
     "next": "^12.1.5",
     "react": "^18.0.0",
