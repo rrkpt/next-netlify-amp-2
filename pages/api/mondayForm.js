@@ -11,7 +11,7 @@ export default async function handler(req, res) {
         method: 'post',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjE0MDM2MTY3NCwidWlkIjoyMzQ2MTQ4MywiaWFkIjoiMjAyMi0wMS0xMVQxOTowMzozNC4wMDBaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6OTUyODI3OSwicmduIjoidXNlMSJ9.BwcFQEMGgb0Wdwq5NtkyPIOmPJoBZkQZoPPUUlyvtP0'
+            'Authorization': ''
         },
         body: JSON.stringify({
             query: query,
