@@ -6,7 +6,7 @@ const analytics = Analytics({
   app: 'ke-app',
   plugins: [
     googleTagManager({
-      containerId: 'GTM-TP8G5FK'
+      containerId: ''
     })
   ]
 })
